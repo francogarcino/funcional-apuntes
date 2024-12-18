@@ -3,20 +3,22 @@
 Repo con algunos apuntes y ejercicios resueltos de funcional.
 Varios ejercicios estan chequeados con WinHugs.
 
+---
 ## 📚 Apuntes
 
-[🖥️ Modelo de computo]()
+[🍛 Currificación](/apuntes/curry.md)
 
-[✅ Sistemas de tipos]()
+[🐞 Reducción](/apuntes/reduccion.md)
 
-[🍛 Currificación]()
+[🍕 Tipos Algebraicos 🍨](/apuntes/wip.md)
 
-[🐞 Reducción]()
+[📘 Demostraciones](/apuntes/wip.md)
 
-[🍕 Tipos Algebraicos 🍨]()
+[📁 Esquemas de funciones](/apuntes/esquemas/esquemas.md)
 
-[📘 Demostraciones]()
+---
+## :warning: ¡Disclaimers! 
 
-[🏢 Inducción / Recursión]()
+- No me hago cargo de los tildes que falten :stuck_out_tongue_closed_eyes:
 
-[📁 Esquemas de funciones]()
+- Estos apuntes NO reemplazan la teoria que da FF, solo son breves resumenes
