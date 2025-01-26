@@ -21,4 +21,7 @@ Varios ejercicios estan chequeados con WinHugs.
 
 - No me hago cargo de los tildes que falten :stuck_out_tongue_closed_eyes:
 
-- Estos apuntes NO reemplazan la teoria que da FF, solo son breves resumenes
+- Estos apuntes NO reemplazan la teoria que da FF
+
+    - solo son breves resumenes
+
