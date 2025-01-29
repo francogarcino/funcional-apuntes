@@ -90,16 +90,22 @@ De cierto modo, cada flecha en el tipado de una función nos indica que se esta 
     -- Int -> (Int -> Int)
     mult 2 -- mult 2 :: Int -> Int
     ```
-
+Y ademas, gracias a lo visto en la clase 1 y 2 con las expresiones y el sistema de tipos, tambien definimos
+    ```hs
+    -- Int -> Int -> Int
+    mult -- :: Int -> Int -> Int
+    ```
 ---
 
 ## La posta de currificar :curry:
-Basandonos en calculo lambda, **toda función tiene UN SOLO parametro**. Por lo que decir que mult _"toma dos numeros"_ (como hacemos desde Estructuras) no es correcto.
+Basandonos en calculo lambda _(spoilers muuuuy a futuro)_, **toda función tiene UN SOLO parametro**. Por lo que decir que mult _"toma dos numeros"_ (como hacemos desde Estructuras) no es correcto.
 
 > Aclaración: Decir que una función cualquiera toma más de un parametro como haciamos en Estructuras es lo que en PF se llama como :croissant: leer en frances :croissant: 
 
+> Pero a terminos practicos, en PF leeremos cada tanto en frances entendiendo que es unicamente por comodidad
+
 #### ¿Y todo esto para que?
-Ademas de facilitarlos el refactor y la detección de errores en algunos casos (que no son relevantes para este resumen) la gran ventaja de la programación funcional es la **aplicación parcial** de las funciones, es decir, aprovechar la currificación para expresar ideas con funciones que toman ciertos parametros y retornan otras funciones que hacen a nuestra idea. Veamos ejemplos:
+Ademas de facilitarlos el refactor y la detección de errores en algunos casos (que no son relevantes para este resumen) la gran ventaja de la currificación es la **aplicación parcial** de las funciones, es decir, aprovechar todas esas funciones que definimos para expresar ideas con funciones que toman ciertos parametros y retornan otras funciones que hacen a nuestra idea. Veamos ejemplos:
 
 - ¿Como escribiriamos una función que calcula el doble de un numero? ¿Y el triple? ¿Y el decuple _(por 10)_?
     - Un enfoque como el de Estructuras seria:
@@ -119,6 +125,12 @@ Ademas de facilitarlos el refactor y la detección de errores en algunos casos (
     doble = mult 2    -- esto tipa en Int -> Int
     triple = mult 3   -- esto tipa en Int -> Int
     decuple = mult 10 -- esto tipa en Int -> Int
+    ```
+    O sea que podemos decir que:
+    ```hs
+    doble = mult 2    -- toma un numero, y retorna otro (su doble)
+    triple = mult 3   -- toma un numero, y retorna otro (su triple)
+    decuple = mult 10 -- toma un numero, y retorna otro (su decuple)
     ```
 
 ---

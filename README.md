@@ -6,6 +6,8 @@ Varios ejercicios estan chequeados con WinHugs.
 ---
 ## 📚 Apuntes
 
+[ℹ️ Primero lo primero](/apuntes/aclaraciones.md)
+
 [🍛 Currificación](/apuntes/curry.md)
 
 [🐞 Reducción](/apuntes/reduccion.md)
